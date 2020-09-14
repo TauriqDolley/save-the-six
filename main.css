@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Open+Sans:wght@300;400&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: #dbe6e1;
+}
+
+#header-title {
+	width: 100%;
+	padding: 1rem;
+	margin: 0 auto;
+	font-family: "Open Sans", sans-serif;
+	align-self: center;
+	color: black;
+	box-shadow: 2px 2px 2px solid black;
+}
+
+#header-img__container {
+	background: #fdfdff;
+	height: 8rem;
+	margin: 0 auto;
+	padding: 0;
+	/* padding: 16px; */
+	background-image: url("https://www.southernmail.co.za/wp-content/uploads/2019/08/112158001.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	filter: grayscale(0.5);
+	display: flex;
+	align-content: center;
+}
+
+@media (min-width: 40rem) {
+	.container-main__layout {
+		display: grid;
+		grid-template-areas:
+			"info info twitter"
+			"payment payment twitter"
+			"socials socials twitter";
+	}
+}
+
+.container-info__image img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.container-info__text {
+	display: flex;
+	flex-direction: column;
+	background: #fdfdff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 1.6rem;
+	margin-bottom: 2rem;
+	grid-area: info;
+}
+
+.container-payment {
+	padding: 1rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	background: #dbe6e1;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	visibility: hidden;
+	grid-area: payment;
+}
+
+#title__cta {
+	text-align: center;
+	text-transform: capitalize;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Open Sans", sans-serif;
+}
+
+#banking-details {
+	background: #c6c5b9;
+	display: inline-block;
+	padding: 1rem;
+	margin: 1rem;
+	flex-basis: 280px;
+	line-height: 19px;
+}
+
+.container-socials {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
+	grid-area: socials;
+	margin-bottom: 2rem;
+}
+
+.twitter-timeline {
+	grid-area: twitter;
+}
+
+.open {
+	visibility: visible;
+}
