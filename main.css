@@ -40,7 +40,6 @@ body {
 	height: 8rem;
 	margin: 0 auto;
 	padding: 0;
-	/* padding: 16px; */
 	background-image: url("https://www.southernmail.co.za/wp-content/uploads/2019/08/112158001.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -115,6 +114,7 @@ body {
 	justify-content: center;
 	gap: 1rem;
 	background: #dbe6e1;
+
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	text-align: center;
