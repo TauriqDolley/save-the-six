@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Open+Sans:wght@300;400&display=swap");
 
+:root {
+	--animate-duration: 1200ms;
+	--animate-delay: 2s;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -65,7 +70,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 1.6rem;
-	margin-bottom: 2rem;
+	margin-bottom: 0.5rem;
 	grid-area: info;
 }
 
@@ -89,8 +94,26 @@ body {
 	text-align: center;
 	text-transform: capitalize;
 	width: 100%;
-	margin: 0 auto;
+	text-align: center;
+	margin: 0.5rem;
 	font-family: "Open Sans", sans-serif;
+}
+
+@media (min-width: 40rem) {
+	#title__cta {
+		text-align: center;
+		text-transform: capitalize;
+		width: 100%;
+		text-align: center;
+		margin-top: 0.4rem;
+		padding: 0;
+		font-family: "Open Sans", sans-serif;
+	}
+
+	.container-payment {
+		padding: 0;
+		height: 100%;
+	}
 }
 
 #banking-details {
