@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Open+Sans:wght@300;400&display=swap");
 
 :root {
@@ -6,6 +13,7 @@
 }
 
 * {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -19,8 +27,11 @@ body {
 	padding: 1rem;
 	margin: 0 auto;
 	font-family: "Open Sans", sans-serif;
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
 	align-self: center;
 	color: black;
+	-webkit-box-shadow: 2px 2px 2px solid black;
 	box-shadow: 2px 2px 2px solid black;
 }
 
@@ -38,13 +49,18 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
+	-webkit-filter: grayscale(0.5);
 	filter: grayscale(0.5);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-line-pack: center;
 	align-content: center;
 }
 
 @media (min-width: 40rem) {
 	.container-main__layout {
+		display: -ms-grid;
 		display: grid;
 		grid-template-areas:
 			"info info twitter"
@@ -60,14 +76,23 @@ body {
 }
 
 .container-info__text {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	background: #fdfdff;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	width: 100%;
 	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 1.6rem;
 	margin-bottom: 0.5rem;
@@ -77,9 +102,16 @@ body {
 .container-payment {
 	padding: 1rem;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	gap: 1rem;
 	background: #dbe6e1;
@@ -121,16 +153,27 @@ body {
 	display: inline-block;
 	padding: 1rem;
 	margin: 1rem;
+	-ms-flex-preferred-size: 280px;
 	flex-basis: 280px;
 	line-height: 19px;
 }
 
 .container-socials {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	gap: 8px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-family: "Open Sans", sans-serif;
 	width: 100%;
@@ -140,6 +183,29 @@ body {
 
 .twitter-timeline {
 	grid-area: twitter;
+}
+
+@media (min-width: 40rem) {
+	.container-info__text {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+	.container-payment {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+	.container-socials {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+	.twitter-timeline {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 3;
+		-ms-grid-column: 3;
+	}
 }
 
 .open {
