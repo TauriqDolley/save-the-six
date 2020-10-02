@@ -1,13 +1,9 @@
 # Save the Six
 
-Save the Six is a static web-page which consolidates information relating to the District Six Museum's fundraiser. After Covid19's effect on the tourism industry, a vital piece of South Africa's history is under threat of closing down. 
+Save the Six is a static web-page for a District Six Museum fundraiser run by myself and a group of passionate indidvuals. After Covid19's effect on the tourism industry, a vital piece of South Africa's history is under threat of closing down and I wanted to use my skillset to assist in bringing support and attention to the museums plight. 
 
-The goal of the site is to create an easily shareable mobile-friendly site that informs people quickly and provides easy ways to assist the museum. 
+The website contains our Call-to-Action as well as a link to a styled Google Form that allows artists to submit artwork for auction. The proceeds of the auction will be donated to the museum. 
 
-## Features
+The goal of the site is to create an easily shareable mobile-friendly site that informs people quickly and provides easy ways to get involved. It is responsive for various screen sizes and is built using HTML5/ CSS / ES6 Javascript
 
-Embedded a curated Twitter timeline of related tweets as well as a widget that allows those unable to donate to tweet out. 
 
-## Screenshot
-
-[![Untitled.png](https://i.postimg.cc/QC1V3pFG/Untitled.png)](https://postimg.cc/SYQmLYLD) 
