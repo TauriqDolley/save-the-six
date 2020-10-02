@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 *,
@@ -15,33 +16,33 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 .parent {
-	justify-content: center;
-	align-items: center;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
-.header {
-	background-image: url("/src/header.jpg");
-	background-size: cover;
-	background-position: 55% 50%;
-	background-repeat: no-repeat;
-	height: 15vh;
-	width: 100vw;
-	max-width: 100%;
-	margin: auto;
+.header_img {
+	object-fit: cover;
+	max-width: 100vw;
+	max-height: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 70rem) {
 	.header {
-		background-size: cover;
 		height: 22vh;
 		align-self: center;
-		background-position: 50% 50%;
-		/* padding: 4rem; */
+	}
+
+	.header_img {
+		width: 100vw;
+		max-width: 100%;
+		height: 25vh;
 	}
 }
 
@@ -50,21 +51,53 @@ body {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	grid-template-rows: auto min(400px, 600px) auto;
+	grid-template-rows: 200px 1fr 400px 100px;
+	place-items: center;
 	max-width: 100vw;
 	background: #fdfdff;
-
-	align-items: center;
-	justify-content: center;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 70rem) {
 	.main {
-		place-items: center;
-		margin: 1rem;
+		max-width: 100vw;
+		justify-content: center;
 		grid-template-columns: 500px 500px;
-		grid-template-rows: 1fr 300px;
-		gap: 1rem;
+		grid-template-rows: 500px 300px;
+		column-gap: 2rem;
+	}
+
+	.container-info__img {
+		grid-column: 1;
+		grid-row: 1;
+		width: 500px;
+		height: 500px;
+		display: block;
+	}
+
+	.container-info__preface {
+		grid-column: 2;
+		margin: 0;
+		max-width: 200px;
+	}
+
+	#title__cta {
+		text-align: center;
+		text-transform: capitalize;
+		width: 100%;
+		text-align: center;
+		margin-top: 0.4rem;
+		padding: 0;
+		font-family: "Open Sans", sans-serif;
+	}
+
+	.container-payment {
+		padding: 0;
+		margin: 0;
+		height: 450px;
+	}
+
+	.submission__btn {
+		margin: 0;
 	}
 }
 
@@ -81,8 +114,8 @@ body {
 	margin: 5px;
 	background: #fdfdff;
 	max-width: 80vw;
-
 	margin: 0 auto;
+	text-align: center;
 }
 
 .container-info__text {
@@ -90,34 +123,13 @@ body {
 	margin: 5px;
 	background: #fdfdff;
 	max-width: 80vw;
-
 	margin: 0 auto;
 }
 
 .container-info__img {
-	background-image: url("/src/callToAction.jpg");
-	background-color: #ffffff;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	max-width: 90vw;
-	width: calc(100vw - 0.8rem);
-	min-height: 50vh;
-	margin: 0 auto;
-}
-
-@media (min-width: 40rem) {
-	.container-info__img {
-		grid-column: 1;
-		grid-row: 1;
-
-		width: 100%;
-		height: 100%;
-	}
-
-	.container-info__preface {
-		grid-column: 2;
-	}
+	object-fit: contain;
+	width: 100%;
+	padding: 1rem;
 }
 
 .container-payment {
@@ -125,15 +137,14 @@ body {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 	gap: 2rem;
 	background-color: #dadada;
 	border: 1px solid rgba(0, 0, 0, 0.466);
 	text-align: center;
+
 	width: 100vw;
 	min-height: 35vh;
-	/* visibility: hidden; */
 }
 
 #title__cta {
@@ -141,37 +152,22 @@ body {
 	text-transform: capitalize;
 	width: 100vw;
 	text-align: center;
-	/* margin: 0.5rem; */
+
 	padding: 1rem;
 	font-family: "Open Sans", sans-serif;
 }
 
-@media (min-width: 40rem) {
-	#title__cta {
-		text-align: center;
-		text-transform: capitalize;
-		width: 100%;
-		text-align: center;
-		margin-top: 0.4rem;
-		padding: 0;
-		font-family: "Open Sans", sans-serif;
-	}
-
-	.container-payment {
-		padding: 0;
-		margin: 0;
-		height: 40vh;
-	}
-}
-
 #banking-details {
 	background: #c6c5b9;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 1rem;
 	margin: 1rem;
 	-ms-flex-preferred-size: 280px;
 	flex-basis: 280px;
 	line-height: 19px;
+	height: 140px;
 	box-shadow: 2px 2px 2px 2px rgb(194, 194, 194);
 }
 
@@ -186,12 +182,6 @@ body {
 	border: 4px solid #494949 !important;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
-}
-
-@media (min-width: 40rem) {
-	.submission__btn {
-		margin: 0;
-	}
 }
 
 .submission__btn:hover {
