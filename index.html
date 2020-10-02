@@ -3,87 +3,55 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
-		/>
+		<title>Layout Tests</title>
 		<link rel="stylesheet" href="main.css" />
-	  <script src="main.js"></script>
+		<script src="main.js" defer></script>
 	</head>
-
 	<body>
-		<div id="header-img__container">
-			<h1 id="header-title">Send a Love Letter!</h1>
-		</div>
+		<div class="parent">
+			<header class="header"></header>
+			<div class="main child">
+				<div class="container-info__preface">
+					<p>
+						Like the rest of the world, the District Six Museum is feeling the
+						impact of the Covid-19 Pandemic and needs to raise funds to cover
+						operating costs so that they can keep the doors of the Museum open
+						and continue to share stories of heritage, history and identity as a
+						way of keeping the memory of District Six alive.
+					</p>
+				</div>
 
-		<div class="container-main__layout">
-			<div class="container-info__text">		
-				<p>
-					<b>District Six Foundation</b> was founded in 1989 and the museum in 1994, as
-					a memorial to the forced movement of 60,000 inhabitants of various
-					races in District Six during Apartheid in South Africa in the 1970s.
-				</p><br>
-				<p>
-					If you would like to support this famed institution, you can
-					contribute in the following ways:
-				</p><br>
-				</p>
-					A monthly donation of <b>R50.</b> This is the value of an entrance
-					fee. <br> 							
-					A once-off donation of <b>R110.</b> This is the value of a guided
-					visit.<br>
-					Larger once-off donations are welcome.
-				</p>
-		</div>
+				<div class="container-info__img"></div>
+				<div class="container-info__auction"></div>
+
+                <div class="button_cont" align="center"><a class="submission__btn" href="submission.html" target="_blank" rel="nofollow noopener">Submit an artwork!</a></div>
+
 		
-		
-		<div class="container-payment" id="givengain">		
-			<h1 id="title__cta">How can I help?</h1>
-			<iframe
-				frameborder="0"
-				title="givengain"
-				src="https://www.givengain.com/widget/en/cause/3373"
-				id="givengain-iframe"
-				width="400"
-				height="228"
-			></iframe>
-			OR
-			<div id="banking-details">
-							Send your Love Letter via EFT: <br>
-							Standard Bank <br>
-							Account no: 070 293 686 <br>
-							Branch code: 020 909 <br>
-							Swift code: SBZ AZA JJ <br>
-							</pre>
 			</div>
-			OR
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/zVNvgy7JXdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<label for="iframe">Buy tickets for the Save D6 Museum benefit concert on the 24th September 2020 (Heritage Day)</label>
-			<a href="https://www.quicket.co.za/events/115443-save-d6-museum-benefit-concert/?utm_source=EventPage&utm_medium=Sharebox&utm_campaign=">Quicket Link</a>
-		</div>
-		<br>
-		<div class="container-socials">
-			<label for="twitter-embed">Tweet out to raise awareness</label>
-			<a
-				href="https://twitter.com/intent/tweet?button_hashtag=DistrictSixMuseum&ref_src=twsrc%5Etfw"
-				class="twitter-hashtag-button"
-				data-size="large"
-				data-show-count="false"
-				>Tweet #DistrictSixMuseum</a
-			>
-			<script
-				async
-				src="https://platform.twitter.com/widgets.js"
-				charset="utf-8"
-			></script>
-			<a
-			href="https://mailchi.mp/f93fdd07456c/send-a-love-letter-to-the-district-six-museum-today-3879404?e=82bac3f572" class="socials__article"
-			>More Details</a
-		>
-		</div>
-	<a class="twitter-timeline" data-width= "350" data-height="1000" data-theme="light" href="https://twitter.com/JustDolley/timelines/1303629977531940864?ref_src=twsrc%5Etfw">District Six Museum - Curated tweets by JustDolley</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+			<div class="container-payment" id="givengain">		
+                <h1 id="title__cta">How else can I help?</h1>
+                <iframe
+                    frameborder="0"
+                    title="givengain"
+                    src="https://www.givengain.com/widget/en/cause/3373"
+                    id="givengain-iframe"
+                    width="400"
+                    height="228"
+                ></iframe>
+                OR
+                <div id="banking-details">
+                                Send your Love Letter via EFT: <br>
+                                Standard Bank <br>
+                                Account no: 070 293 686 <br>
+                                Branch code: 020 909 <br>
+                                Swift code: SBZ AZA JJ <br>
+                                </pre>
+                </div>
+        
+            </div>
+            <br>
+         
+		</div>
 	</body>
-
 </html>
