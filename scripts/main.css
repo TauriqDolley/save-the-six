@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-	background-image: url("src/header.jpg");
+	background-image: url("../src/header.jpg");
 	background-size: cover;
 	background-position: 55% 50%;
 	background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
 }
 
 .container-info__img {
-	background-image: url("src/cta.jpg");
+	background-image: url("../src/CTA.jpg");
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-position: center center;
