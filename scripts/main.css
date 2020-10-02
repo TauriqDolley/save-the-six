@@ -28,9 +28,7 @@ body {
 .header_img {
 	object-fit: cover;
 	max-width: 100vw;
-	max-height: 100%;
 	margin: 0 auto;
-	display: block;
 }
 
 @media (min-width: 70rem) {
@@ -161,9 +159,6 @@ body {
 
 #banking-details {
 	background: #c6c5b9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	padding: 1rem;
 	margin: 1rem;
 	-ms-flex-preferred-size: 280px;
